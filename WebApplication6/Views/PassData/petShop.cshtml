@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Titel = "petShop";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>petShop</title>
+</head>
+<body>
+    <div> 
+        <h2>petShop</h2>
+        Name: @ViewData["Company"]<br/>
+        Address : @ViewBag.Adderss<br/>
+        @foreach(var pet in Model)
+        {
+            @pet
+        }
+
+    </div>
+</body>
+</html>

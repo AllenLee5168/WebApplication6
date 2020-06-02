@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index1F</title>
+</head>
+<body>
+    <div>
+        <hr>
+        ViewData to the Answer @ViewData["A"]<br />
+        ViewBag to the Answer @ViewBag.B<br />
+        TempData["C"] 的答案 :@TempData["C"]<br />
+
+        課本:
+        數字:@ViewData["AA"]<br />
+        布林值:@ViewBag.BB<br />
+        串列:
+        @foreach (var a in TempData)
+        {@a.Key<br />@a.Value}
+
+
+        <hr />
+    </div>
+</body>
+</html>
